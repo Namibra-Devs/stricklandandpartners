@@ -11,7 +11,7 @@ export default {
         secondary: "#f1c40f",
       },
       fontFamily: {
-        header: ["Inter", "sans-serif"],
+        header: ["Kanit", "sans-serif"],
         body: ["Ubuntu", "sans-serif"],
       },
     },
