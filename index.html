@@ -9,31 +9,47 @@
     <!-- JS -->
      <script src="./src/main.js" defer></script>
     <title>Strickland and Partners</title>
+
+    <style>
+      /* Custom smooth transition */
+    
+    </style>
+
   </head>
   <body class="font-body">
    <!-- Navigation -->
-   <div class="sticky top-0 z-50 py-4 w-full shadow-lg">
+   <div class="sticky top-0 z-50 py-4 w-full transition-bg bg-transparent text-primary" id="navbar">
     <nav class="flex items-center mx-auto w-10/12 justify-between container">
-        <div class="logo pl-2 lg:pl-0">
-           <a href="./index.html" class="font-bold font-header">Strickland and Partners
-        <img src="./src/images/logo.png" alt="" class="w-auto h-auto select-none">
+        <div class="logo lg:w-1/4 w-full">
+           <a href="./index.html" class="font-bold font-header">
+        <img src="./src/imgs/logo.svg" alt="" class="w-auto h-auto select-none">
       </a>
         </div>
 
-        <div class="flex">
-        <ul class="absolute menu hidden bg-white lg:flex justify-between top-14 left-0 pb-4 lg:relative lg:top-0 lg:pb-0 transition-all duration-500 flex-col lg:flex-row text-sm z-40 lg:ml-0 pt-2 lg:pt-0 pl-10 lg:pl-0 w-full font-header" id="toggleDropdown">
+        <div class="lg:flex justify-between w-full absolute menu hidden top-16 left-0 pb-4 lg:relative lg:top-0 lg:pb-0 transition-all duration-500 z-40 pt-2 lg:pt-0 pl-10 md:pl-20 lg:pl-0 font-header">
+        <ul class=" lg:flex flex-col lg:flex-row justify-center font-header lg:w-full w-9/12 mb-2 lg:mb-0" id="toggleDropdown">
            
-            <li class="lg:ml-1 lg:mr-0 cursor-pointer text-primary-dark rounded-sm w-60 md:w-auto md:mt-0 hover:bg-primary-dark hover:text-slate-100">
-              <a href="./about.html" class="px-4 py-2 block lg:inline-block ">About Us</a>
+            <li class="lg:ml-1 lg:mr-0 cursor-pointer w-60 md:w-auto md:mt-0 hover:border-b-2 border-primary">
+              <a href="./about.html" class="px-4 py-2 block lg:inline-block">Practice Areas</a>
             </li>
-            <li class="lg:ml-1 lg:mr-0 cursor-pointer text-primary-dark rounded-sm w-60 md:w-auto md:mt-0 hover:bg-primary-dark hover:text-slate-100">
+            <li class="lg:ml-1 lg:mr-0 cursor-pointer w-60 md:w-auto md:mt-0 hover:border-b-2 border-primary">
+              <a href="./about.html" class="px-4 py-2 block lg:inline-block">About Us</a>
+            </li>
+            <li class="lg:ml-1 lg:mr-0 cursor-pointer w-60 md:w-auto md:mt-0 hover:border-b-2 border-primary">
               <a href="./about.html" class="px-4 py-2 block lg:inline-block">Contact Us</a>
             </li>
           </ul>
+
+
+          <div class="consultation flex items-center lg:justify-end md:w-1/3 w-auto">
+            <a href="#consultation" class="consultation-link border-2 border-primary hover:bg-primary hover:text-slate-100 px-4 py-1 rounded-full transition-all duration-300 ease-in-out" id="consultation">Book Consultation</a>
+          </div>
           
+        </div>
+
         <div class="z-40 relative">
           <button title="toggle-menu" type="button"
-            class="bg-primary-light text-secondary toggle-btn outline-none border-none cursor-pointer lg:hidden flex items-center px-2 py-1 z-50 rounded">
+            class="bg-primary text-slate-200 toggle-btn outline-none border-none cursor-pointer lg:hidden flex items-center px-2 py-1 z-50 rounded">
              
             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6"><title>toggle Menu</title>
                 <path class="open transition-all ease-out duration-300" fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
@@ -41,9 +57,40 @@
               
            
           </button>
-        </div>
       </div>
     </nav>
     </div>
+
+
+    <main>
+      <!-- Hero Section -->
+       <section class="hero-heading h-screen">
+        <div class="container mx-auto p-4 md:p-0 w-10/12">
+
+          <div class="flex flex-col lg:flex-row justify-center items-center mt-14 lg:mt-auto">
+            <div class="w-full lg:mr-10">
+              <h1 class="text-5xl font-bold font-header text-primary">
+                Bridging Law and Innovation in <span id="hero-text" class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-primary-light animate-fade"></span>
+              </h1>
+              <p class="text-slate-500 mt-4">Protecting your digital assets, smart contracts, and crypto projects with cutting-edge legal solutions.  
+                Experience legal expertise built for the decentralized world.</p>
+                <div class="mt-8">
+              <a href="#schedule" class="border-2 border-primary text-primary px-6 py-2 rounded-full hover:bg-primary hover:text-slate-200 transition-all duration-300 ease-in-out">Make A Schedule 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="size-5 ml-2 inline-block">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+                                              
+              </a>
+            </div>
+                          </div>
+            <div class="w-full lg:ml-10 hidden lg:block">
+              <!-- hero image -->
+               <img src="./src/imgs/hero-img.png" alt="" class=" object-cover">
+              </div>
+            </div>
+          </div>
+
+       </section>
+    </main>
   </body>
 </html>
