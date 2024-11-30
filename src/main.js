@@ -11,7 +11,7 @@ const open = document.querySelector(".open");
 // Toggle menu visibility when the bars icon is clicked
 toggleBtn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
-  toggleBtn.classList.toggle("bg-red-500");
+  toggleBtn.classList.toggle("bg-red-700");
  
   menu.classList.toggle("bg-slate-100");
 
