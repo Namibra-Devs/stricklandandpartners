@@ -84,12 +84,48 @@ function animateHero() {
       animateHero();
     }
   });
-  // window.addEventListener("focus", () => {
-  //   animateHero();
-  //   });
-  //   window.addEventListener("blur", () => {
-  //     clearTimeout(intervalId);
-  //   });
-  //   window.addEventListener("unload", () => {
-  //     clearTimeout(intervalId);
-  //     });
+  window.addEventListener("focus", () => {
+    animateHero();
+    });
+    window.addEventListener("blur", () => {
+      clearTimeout(intervalId);
+    });
+    window.addEventListener("unload", () => {
+      clearTimeout(intervalId);
+      });
+
+
+
+  // Sponsors animation
+const scrollers = document.querySelectorAll(".scroller");
+
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller_inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+    console.log(scrollerContent);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+  
+}
+
+
+// Current year for footer
+const currentYear = new Date().getFullYear();
+document.querySelector(".year").textContent = currentYear;
