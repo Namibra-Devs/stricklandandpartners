@@ -4,30 +4,44 @@ const toggleBtn = document.querySelector(".toggle-btn");
 const toggleDropdown = document.getElementById("toggleDropdown");
 const dropdownMenu = document.getElementById("dropdownMenu");
 const arrowGet = document.getElementById("get-arrow");
+const close = document.querySelector(".close");
+const open = document.querySelector(".open");
+
 
 // Toggle menu visibility when the bars icon is clicked
 toggleBtn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
   toggleBtn.classList.toggle("bg-red-500");
-  menu.classList.toggle("bg-dark");
-  menu.classList.toggle("text-slate-200");
+ 
+  menu.classList.toggle("bg-slate-100");
 
-  // Remove menu bg if in large screens
-  if (window.matchMedia("(min-width: 1024px)").matches) {
-    menu.classList.remove("bg-dark");
-    menu.classList.remove("text-slate-200");
+  // Change the hamburger button to x when open
+  if (menu.classList.contains("hidden")) {
+    open.classList.remove("hidden");
+    close.classList.add("hidden");
+  } else {
+    open.classList.add("hidden");
+    close.classList.remove("hidden");
   }
-  console.log(toggleDropdown)
-  // toggleBtn.classList.toggle('bg-secondary')
 
-  // Close menu when a menu item is clicked
-  menu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
+  // Get all the nav links
+  const navLinks = menu.querySelectorAll(".nav-link");
+
+  // Close menu when a menu item is clicked and set the active link
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      // Add hidden class to close the menu
       menu.classList.add("hidden");
-      menu.classList.remove("bg-dark");
-    });
+
+      // Remove the active class from all links
+      navLinks.forEach((link) => link.classList.remove("border-b-2", "border-primary"));
+
+      // Add the active class to the clicked link
+      event.target.classList.add("border-b-2", "border-primary");
+        });
   });
 });
+
 
 toggleDropdown.addEventListener("click", (event) => {
   event.stopPropagation(); // Prevent click events from bubbling up
@@ -40,16 +54,13 @@ const consultation = document.getElementById('consultation');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) { // Adjust scroll threshold
-    navbar.classList.add('bg-dark', 'shadow-md', 'text-slate-200'); // Add Tailwind classes
-    navbar.classList.remove('text-primary'); // Remove solid background classes
-    navbar.classList.remove('bg-transparent', 'shadow-none', 'text-slate-900');
-    consultation.classList.add('border-slate-100', 'hover:border-primary');
+    navbar.classList.add('bg-slate-100', 'shadow-md',); // Add Tailwind classes
+    navbar.classList.remove('bg-transparent', 'shadow-none',);
 
   } else {
-    navbar.classList.add('bg-transparent', 'shadow-none', 'text-slate-900'); // Add transparent classes
-    navbar.classList.remove('bg-dark', 'shadow-md', 'text-slate-200'); // Remove solid background classes
-    navbar.classList.add('text-primary'); // Remove solid background classes
-    consultation.classList.remove('border-slate-100', 'hover:border-primary');
+    navbar.classList.add('bg-transparent', 'shadow-none',); // Add transparent classes
+    navbar.classList.remove('bg-slate-100', 'shadow-md',); // Remove solid background classes
+    
 
   }
 });
