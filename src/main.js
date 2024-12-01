@@ -54,13 +54,12 @@ const consultation = document.getElementById('consultation');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) { // Adjust scroll threshold
-    navbar.classList.add('bg-slate-100', 'shadow-md',); // Add Tailwind classes
+    navbar.classList.add('shadow-md',); // Add Tailwind classes
     navbar.classList.remove('shadow-none',);
 
   } else {
     navbar.classList.add('shadow-none',); // Add transparent classes
-    navbar.classList.remove('bg-slate-100', 'shadow-md',); // Remove solid background classes
-    
+    navbar.classList.remove('shadow-md',); // Remove solid background classes   
 
   }
 });
@@ -97,63 +96,63 @@ function animateHero() {
 
 
   // Sponsors animation
-// const scrollers = document.querySelectorAll(".scroller");
-
-// if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-//   addAnimation();
-// }
-
-// function addAnimation() {
-//   scrollers.forEach((scroller) => {
-//     // add data-animated="true" to every `.scroller` on the page
-//     scroller.setAttribute("data-animated", true);
-
-//     // Make an array from the elements within `.scroller-inner`
-//     const scrollerInner = scroller.querySelector(".scroller_inner");
-//     const scrollerContent = Array.from(scrollerInner.children);
-//     console.log(scrollerContent);
-
-//     // For each item in the array, clone it
-//     // add aria-hidden to it
-//     // add it into the `.scroller-inner`
-//     scrollerContent.forEach((item) => {
-//       const duplicatedItem = item.cloneNode(true);
-//       duplicatedItem.setAttribute("aria-hidden", true);
-//       scrollerInner.appendChild(duplicatedItem);
-//     });
-//   });
-  
-// }
-
 const scrollers = document.querySelectorAll(".scroller");
 
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
 }
 
 function addAnimation() {
   scrollers.forEach((scroller) => {
-    const scrollerInner = scroller.querySelector(".scroller_inner");
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
 
-    // Duplicate the content of the scroller to ensure seamless scrolling
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller_inner");
     const scrollerContent = Array.from(scrollerInner.children);
+    console.log(scrollerContent);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
       duplicatedItem.setAttribute("aria-hidden", true);
       scrollerInner.appendChild(duplicatedItem);
     });
-
-    // Adjust animation duration based on content width
-    const totalWidth = Array.from(scrollerInner.children).reduce(
-      (acc, item) => acc + item.offsetWidth + parseInt(getComputedStyle(item).marginRight || 0),
-      0
-    );
-
-    // Dynamically set animation duration based on the total width
-    const duration = totalWidth / 100; // Adjust speed factor here
-    scrollerInner.style.animationDuration = `${duration}s`;
   });
+  
 }
+
+// const scrollers = document.querySelectorAll(".scroller");
+
+// if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+//   addAnimation();
+// }
+
+// function addAnimation() {
+//   scrollers.forEach((scroller) => {
+//     const scrollerInner = scroller.querySelector(".scroller_inner");
+
+//     // Duplicate the content of the scroller to ensure seamless scrolling
+//     const scrollerContent = Array.from(scrollerInner.children);
+//     scrollerContent.forEach((item) => {
+//       const duplicatedItem = item.cloneNode(true);
+//       duplicatedItem.setAttribute("aria-hidden", true);
+//       scrollerInner.appendChild(duplicatedItem);
+//     });
+
+//     // Adjust animation duration based on content width
+//     const totalWidth = Array.from(scrollerInner.children).reduce(
+//       (acc, item) => acc + item.offsetWidth + parseInt(getComputedStyle(item).marginRight || 0),
+//       0
+//     );
+
+//     // Dynamically set animation duration based on the total width
+//     const duration = totalWidth / 100; // Adjust speed factor here
+//     scrollerInner.style.animationDuration = `${duration}s`;
+//   });
+// }
 
 
 
