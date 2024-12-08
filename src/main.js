@@ -1,52 +1,61 @@
-const menu = document.querySelector(".menu");
-const toggleBtn = document.querySelector(".toggle-btn");
-
-const toggleDropdown = document.getElementById("toggleDropdown");
-const dropdownMenu = document.getElementById("dropdownMenu");
-const arrowGet = document.getElementById("get-arrow");
-const close = document.querySelector(".close");
-const open = document.querySelector(".open");
+document.addEventListener("DOMContentLoaded", () => {
 
 
-// Toggle menu visibility when the bars icon is clicked
-toggleBtn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-  toggleBtn.classList.toggle("bg-red-700");
- 
-  menu.classList.toggle("bg-slate-100");
+  const menu = document.querySelector(".menu");
+  const toggleBtn = document.querySelector(".toggle-btn");
+  const toggleDropdown = document.getElementById("toggleDropdown");
+  const close = document.querySelector(".close");
+  const open = document.querySelector(".open");
 
-  // Change the hamburger button to x when open
-  if (menu.classList.contains("hidden")) {
-    open.classList.remove("hidden");
-    close.classList.add("hidden");
-  } else {
-    open.classList.add("hidden");
-    close.classList.remove("hidden");
-  }
+  // Toggle menu visibility when the bars icon is clicked
+  toggleBtn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    toggleBtn.classList.toggle("bg-red-700");
+    menu.classList.toggle("bg-slate-100");
 
-  // Get all the nav links
+    // Change the hamburger button to X when open
+    if (menu.classList.contains("hidden")) {
+      open.classList.remove("hidden");
+      close.classList.add("hidden");
+    } else {
+      open.classList.add("hidden");
+      close.classList.remove("hidden");
+    }
+  });
+
+  // Handle the toggle dropdown functionality
+  toggleDropdown.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent click events from bubbling up
+  });
+
+  // Get all nav links
   const navLinks = menu.querySelectorAll(".nav-link");
 
-  // Close menu when a menu item is clicked and set the active link
+  // Set the active class on the correct nav link based on the current path
+  const currentPath = window.location.pathname;
   navLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      // Add hidden class to close the menu
-      menu.classList.add("hidden");
+    const linkPath = link.getAttribute("href");
 
-      // Remove the active class from all links
-      navLinks.forEach((link) => link.classList.remove("border-b-2", "border-primary"));
-
-      // Add the active class to the clicked link
-      event.target.classList.add("border-b-2", "border-primary");
-        });
+    // Compare the link href with the current path
+    if (linkPath === currentPath || (linkPath === "/" && currentPath === "/")) {
+      link.classList.add("active"); // Add active class
+    } else {
+      link.classList.remove("active"); // Remove active class
+    }
   });
-});
 
-
-toggleDropdown.addEventListener("click", (event) => {
-  event.stopPropagation(); // Prevent click events from bubbling up
-});
-
+  // Close the menu when a menu item is clicked
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.add("hidden");
+    });
+  });
+  
+  // Handle the toggle dropdown functionality
+  toggleDropdown.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent click events from bubbling up
+  });
+  
 
 // Nav scroll bg
 const navbar = document.getElementById('navbar');
@@ -69,30 +78,52 @@ window.addEventListener('scroll', () => {
 const words = ["Blockchain", "Crypto", "DeFi"];
 let wordIndex = 0;
 let intervalId;
+
 function animateHero() {
   const heroText = document.getElementById("hero-text");
+  if (!heroText) return; // Exit if #hero-text is not found
+
+  console.log(`Changing word to: ${words[wordIndex]}`);
   heroText.textContent = words[wordIndex];
   wordIndex = (wordIndex + 1) % words.length;
-  intervalId = setTimeout(animateHero, 6000); // Change word every 3 seconds
-  }
+  intervalId = setTimeout(animateHero, 6000); // Change word every 6 seconds
+}
+
+// Check if the page is the index page
+if (document.body.classList.contains("index-page")) {
+  console.log("Index Hero page detected");
   animateHero();
+
+  // Pause animation when the page is not visible
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "hidden") {
+      console.log("Page hidden, clearing timeout");
       clearTimeout(intervalId);
     } else {
+      console.log("Page visible, restarting animation");
       animateHero();
     }
   });
-  window.addEventListener("focus", () => {
-    animateHero();
-    });
-    window.addEventListener("blur", () => {
-      clearTimeout(intervalId);
-    });
-    window.addEventListener("unload", () => {
-      clearTimeout(intervalId);
-      });
 
+  // Handle window focus and blur events
+  window.addEventListener("focus", () => {
+    console.log("Window focused, restarting animation");
+    animateHero();
+  });
+
+  window.addEventListener("blur", () => {
+    console.log("Window blurred, clearing timeout");
+    clearTimeout(intervalId);
+  });
+
+  // Clear timeout when the page unloads
+  window.addEventListener("unload", () => {
+    console.log("Page unloading, clearing timeout");
+    clearTimeout(intervalId);
+  });
+} else {
+  console.log("Not the index page; animation skipped");
+}
 
 
   // Sponsors animation
@@ -124,37 +155,65 @@ function addAnimation() {
   
 }
 
-// const scrollers = document.querySelectorAll(".scroller");
 
-// if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-//   addAnimation();
-// }
+    // Toggle for accordion
+  const accordions = document.querySelectorAll(".accordion");
 
-// function addAnimation() {
-//   scrollers.forEach((scroller) => {
-//     const scrollerInner = scroller.querySelector(".scroller_inner");
+  // Toggle accordion content when clicking on a toggle element
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", () => {
+      const toggler = accordion.querySelector(".toggle-accordion");
+      const line = accordion.querySelector(".line");
 
-//     // Duplicate the content of the scroller to ensure seamless scrolling
-//     const scrollerContent = Array.from(scrollerInner.children);
-//     scrollerContent.forEach((item) => {
-//       const duplicatedItem = item.cloneNode(true);
-//       duplicatedItem.setAttribute("aria-hidden", true);
-//       scrollerInner.appendChild(duplicatedItem);
-//     });
+      toggler.classList.toggle("hidden");
+      line.classList.toggle("hidden");
+    });
 
-//     // Adjust animation duration based on content width
-//     const totalWidth = Array.from(scrollerInner.children).reduce(
-//       (acc, item) => acc + item.offsetWidth + parseInt(getComputedStyle(item).marginRight || 0),
-//       0
-//     );
+  });
 
-//     // Dynamically set animation duration based on the total width
-//     const duration = totalWidth / 100; // Adjust speed factor here
-//     scrollerInner.style.animationDuration = `${duration}s`;
-//   });
-// }
-
-
+    const counters = document.querySelectorAll("[data-count]");
+  
+    function animateCount(counter) {
+      const target = parseInt(counter.getAttribute("data-count"), 10);
+      const duration = 2000; // Total animation duration in milliseconds
+      const stepTime = 30; // Update interval in milliseconds
+      let current = 0;
+      const increment = Math.ceil(target / (duration / stepTime));
+  
+      function updateCounter() {
+        current += increment;
+        if (current >= target) {
+          current = target; // Ensure it stops at the target
+          counter.textContent = `${current}+`;
+          return;
+        }
+        counter.textContent = `${current}+`;
+        setTimeout(updateCounter, stepTime);
+      }
+  
+      updateCounter();
+    }
+  
+    // Observer to trigger animation when section is in view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            counters.forEach((counter) => {
+              animateCount(counter);
+            });
+            observer.disconnect(); // Stop observing once animation is triggered
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when 50% of the section is in view
+    );
+  
+    const section = document.querySelector(".bg-dark");
+    if (section) {
+      observer.observe(section);
+    }
+  
 
 // Google Maps
 async function init() {
@@ -203,3 +262,6 @@ document.addEventListener('DOMContentLoaded', init);
 // Current year for footer
 const currentYear = new Date().getFullYear();
 document.querySelector(".year").textContent = currentYear;
+
+
+});
