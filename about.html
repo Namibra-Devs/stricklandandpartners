@@ -23,12 +23,13 @@
     .active {
       border-bottom: 2px solid #03346E;
     }
+
     /*  .scroller {
           mask: linear-gradient(90deg, transparent, rgb(161, 160, 160) 20%, rgb(161, 160, 160) 80%, transparent);
           
           -webkit-mask: linear-gradient(90deg, transparent, rgb(161, 160, 160) 20%, rgb(161, 160, 160) 80%, transparent);
         } */
-     @keyframes scrollerAnimate {
+    @keyframes scrollerAnimate {
 
 
       to {
@@ -38,9 +39,9 @@
 
     .scroller_inner {
       animation: scrollerAnimate 5s infinite linear;
-    } 
+    }
 
-    
+
 
     .scroller {
       overflow: hidden;
@@ -59,7 +60,8 @@
 
     .scroller_item {
       display: inline-block;
-      margin-right: 1rem; /* Adjust spacing between items */
+      margin-right: 1rem;
+      /* Adjust spacing between items */
     }
   </style>
 
@@ -134,43 +136,68 @@
   <main>
     <!-- Hero Section -->
     <header class="hero-heading py-12">
-        <!-- Header -->
-         <div class="header bg-[url('./src/imgs/hero-img.svg')] bg-cover">
-            <h1 class="font-header text-primary text-3xl font-bold text-center mb-10">About Us</h1>
-         </div>
+      <!-- Header -->
+      <div class="header bg-[url('./src/imgs/hero-img.svg')] bg-cover">
+        <h1 class="font-header text-primary text-3xl font-bold text-center mb-10">About Us</h1>
+      </div>
 
 
       <div class="container mx-auto p-4 md:p-0 md:w-10/12 w-11/12">
+        <!-- Text -->
+        <div class="text-content w-full">
+          <!-- About us paragraphs -->
+          <p class="text-slate-600 mb-10">At Strickland & Partners, we are dedicated to providing
+            innovative legal solutions tailored to the evolving needs of the blockchain and cryptocurrency industries.
+            Established in 2019, our firm has quickly become a trusted partner for businesses navigating complex
+            regulatory landscapes and emerging technologies. We pride ourselves on combining deep legal expertise with
+            technical understanding to deliver practical and forward-thinking advice.
+            <br><br>
+            Our team specializes in areas such as smart contract auditing, cryptocurrency compliance, blockchain dispute
+            resolution, and token governance. We work closely with startups, enterprises, and multinational
+            organizations, helping them overcome legal challenges and capitalize on new opportunities in the digital
+            economy. With a client-first approach, we emphasize personalized strategies that align with your goals.
+            <br><br>
+            As thought leaders in blockchain and crypto law, Strickland & Partners actively engages in shaping the
+            future of this dynamic field. From contributing to global policy discussions to advising on groundbreaking
+            projects, we are committed to driving innovation responsibly. Partner with us to navigate the legal
+            complexities of tomorrow’s technology today.
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row md:mt-10 justify-between w-full gap-5">
 
-           <div class="flex flex-col w-full gap-4">
+          <div class="flex flex-col w-full gap-4">
+
             <div>
 
               <h3 class="text-2xl font-bold font-header text-primary">Who We Are</h3>
               <p class="text-gray-600">
-                Our mission is to provide comprehensive legal and financial support to businesses, individuals, and organizations working with blockchain and cryptocurrency technology.
+                Our mission is to provide comprehensive legal and financial support to businesses, individuals, and
+                organizations working with blockchain and cryptocurrency technology.
               </p>
             </div>
 
             <div class="vision">
               <h3 class="text-2xl font-bold font-header text-primary">Our Vision</h3>
               <p class="text-gray-600">
-                To create a global platform that empowers individuals, businesses, and organizations to leverage the power of blockchain and cryptocurrency technology.
+                To create a global platform that empowers individuals, businesses, and organizations to leverage the
+                power of blockchain and cryptocurrency technology.
               </p>
             </div>
-             <a href="#" class="border-2 border-primary rounded-full py-1 px-2 text-center font-header text-primary w-1/2 mt-4">Learn More</a>
-            </div>
+            <a href="#"
+              class="border-2 border-primary rounded-full py-1 px-2 text-center font-header text-primary w-1/2 mt-4">Learn
+              More</a>
+          </div>
 
-           <!-- Image -->
-            <div class="order-first lg:order-2 w-full bg-secondary shadow-lg p-2 rounded">
-              <img src="./src/imgs/hero-img.svg" alt="" class="w-full h-full object-cover">
-            </div>
+          <!-- Image -->
+          <div class="order-first lg:order-2 w-full bg-secondary shadow-lg p-2 rounded">
+            <img src="./src/imgs/hero-img.svg" alt="" class="w-full h-full object-cover">
+          </div>
         </div>
       </div>
       </div>
 
     </header>
-<!-- Hero Section End -->
+    <!-- Hero Section End -->
 
     <!-- International Experience -->
     <section class="bg-dark py-12">
@@ -220,25 +247,28 @@
           </div>
         </div>
 
-     <!-- Experience -->
-     <div class="pt-10 bg-dark border-t-2 border-secondary lg:border-0">
-      <div class="lg:flex justify-between w-10/12 mx-auto space-y-8 lg:space-y-0">
-        <div class="line text-center">
-          <h3 class="text-secondary">Experience</h3>
-          <p id="" class="text-slate-100 text-4xl font-bold font-header"><span id="experience-count" data-count="20">0</span> Years</p>
+        <!-- Experience -->
+        <div class="pt-10 bg-dark border-t-2 border-secondary lg:border-0">
+          <div class="lg:flex justify-between w-10/12 mx-auto space-y-8 lg:space-y-0">
+            <div class="line text-center">
+              <h3 class="text-secondary">Experience</h3>
+              <p id="" class="text-slate-100 text-4xl font-bold font-header"><span id="experience-count"
+                  data-count="20">0</span> Years</p>
+            </div>
+            <div class="line text-center">
+              <h3 class="text-secondary">Worked With</h3>
+              <p class="text-slate-100 text-4xl font-bold font-header"><span id="partners-count"
+                  data-count="250">0</span> Partners</p>
+            </div>
+            <div class="line text-center">
+              <h3 class="text-secondary">Trusted By</h3>
+              <p class="text-slate-100 text-4xl font-bold font-header"><span id="clients-count"
+                  data-count="360">0</span> Clients</p>
+            </div>
+          </div>
         </div>
-        <div class="line text-center">
-          <h3 class="text-secondary">Worked With</h3>
-          <p class="text-slate-100 text-4xl font-bold font-header"><span id="partners-count" data-count="250">0</span> Partners</p>
-        </div>
-        <div class="line text-center">
-          <h3 class="text-secondary">Trusted By</h3>
-          <p class="text-slate-100 text-4xl font-bold font-header"><span id="clients-count" data-count="360">0</span> Clients</p>
-        </div>
-      </div>
-    </div>
 
-    
+
       </div>
     </section>
     <!--International Experience End  -->
@@ -253,222 +283,289 @@
         </p>
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-              
+
           <!-- Attorney -->
           <div class="shadow-md rounded-lg attorney max-w-80 mx-auto">
             <img src="./src/imgs/attorneys/attorney.png" alt="" class="px-2 pt-3 w-full attorney-img">
             <div class="attorney-info p-5 rounded bg-primary">
 
               <div class="flex justify-between items-start">
-              <div class="attorney-info">
-            <h3 class="attorney-name text-xl font-medium font-header text-secondary">
-              John Doe
-            </h3>
-            <p class="attorney-position text-slate-300 font-header">Position</p>
-          </div>
-          <div class="attorney-socials md:block inline-flex">
-            <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-            </a>
-            <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-            </a>
+                <div class="attorney-info">
+                  <h3 class="attorney-name text-xl font-medium font-header text-secondary">
+                    John Doe
+                  </h3>
+                  <p class="attorney-position text-slate-300 font-header">Position</p>
+                </div>
+                <div class="attorney-socials md:block inline-flex">
+                  <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                  </a>
 
+                </div>
+              </div>
+              <div class="bio-button">
+                <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida
+                  consectetur.
+                  <a href="#more-bio"
+                    class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
+                    <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                  </a>
+                </p>
+
+              </div>
+            </div>
           </div>
-        </div>
-          <div class="bio-button">
-            <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida consectetur.
-              <a href="#more-bio" class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
-                <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-              </a>
-            </p>
-  
-        </div>
-          </div>
-        </div>     
           <!-- Attorney -->
           <div class="shadow-md rounded-lg attorney max-w-80 mx-auto">
             <img src="./src/imgs/attorneys/attorney.png" alt="" class="px-2 pt-3 w-full attorney-img">
             <div class="attorney-info p-5 rounded bg-primary">
 
               <div class="flex justify-between items-start">
-              <div class="attorney-info">
-            <h3 class="attorney-name text-xl font-medium font-header text-secondary">
-              John Doe
-            </h3>
-            <p class="attorney-position text-slate-300 font-header">Position</p>
-          </div>
-          <div class="attorney-socials md:block inline-flex">
-            <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-            </a>
-            <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-            </a>
+                <div class="attorney-info">
+                  <h3 class="attorney-name text-xl font-medium font-header text-secondary">
+                    John Doe
+                  </h3>
+                  <p class="attorney-position text-slate-300 font-header">Position</p>
+                </div>
+                <div class="attorney-socials md:block inline-flex">
+                  <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                  </a>
 
+                </div>
+              </div>
+              <div class="bio-button">
+                <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida
+                  consectetur.
+                  <a href="#more-bio"
+                    class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
+                    <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                  </a>
+                </p>
+
+              </div>
+            </div>
           </div>
-        </div>
-          <div class="bio-button">
-            <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida consectetur.
-              <a href="#more-bio" class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
-                <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-              </a>
-            </p>
-  
-        </div>
-          </div>
-        </div>     
           <!-- Attorney -->
           <div class="shadow-md rounded-lg attorney max-w-80 mx-auto">
             <img src="./src/imgs/attorneys/attorney.png" alt="" class="px-2 pt-3 w-full attorney-img">
             <div class="attorney-info p-5 rounded bg-primary">
 
               <div class="flex justify-between items-start">
-              <div class="attorney-info">
-            <h3 class="attorney-name text-xl font-medium font-header text-secondary">
-              John Doe
-            </h3>
-            <p class="attorney-position text-slate-300 font-header">Position</p>
-          </div>
-          <div class="attorney-socials md:block inline-flex">
-            <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-            </a>
-            <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-            </a>
+                <div class="attorney-info">
+                  <h3 class="attorney-name text-xl font-medium font-header text-secondary">
+                    John Doe
+                  </h3>
+                  <p class="attorney-position text-slate-300 font-header">Position</p>
+                </div>
+                <div class="attorney-socials md:block inline-flex">
+                  <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                  </a>
 
+                </div>
+              </div>
+              <div class="bio-button">
+                <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida
+                  consectetur.
+                  <a href="#more-bio"
+                    class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
+                    <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                  </a>
+                </p>
+
+              </div>
+            </div>
           </div>
-        </div>
-          <div class="bio-button">
-            <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida consectetur.
-              <a href="#more-bio" class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
-                <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-              </a>
-            </p>
-  
-        </div>
-          </div>
-        </div>     
           <!-- Attorney -->
           <div class="shadow-md rounded-lg attorney max-w-80 mx-auto">
             <img src="./src/imgs/attorneys/attorney.png" alt="" class="px-2 pt-3 w-full attorney-img">
             <div class="attorney-info p-5 rounded bg-primary">
 
               <div class="flex justify-between items-start">
-              <div class="attorney-info">
-            <h3 class="attorney-name text-xl font-medium font-header text-secondary">
-              John Doe
-            </h3>
-            <p class="attorney-position text-slate-300 font-header">Position</p>
-          </div>
-          <div class="attorney-socials md:block inline-flex">
-            <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-            </a>
-            <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-            </a>
+                <div class="attorney-info">
+                  <h3 class="attorney-name text-xl font-medium font-header text-secondary">
+                    John Doe
+                  </h3>
+                  <p class="attorney-position text-slate-300 font-header">Position</p>
+                </div>
+                <div class="attorney-socials md:block inline-flex">
+                  <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                  </a>
 
+                </div>
+              </div>
+              <div class="bio-button">
+                <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida
+                  consectetur.
+                  <a href="#more-bio"
+                    class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
+                    <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                  </a>
+                </p>
+
+              </div>
+            </div>
           </div>
-        </div>
-          <div class="bio-button">
-            <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida consectetur.
-              <a href="#more-bio" class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
-                <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-              </a>
-            </p>
-  
-        </div>
-          </div>
-        </div>     
           <!-- Attorney -->
           <div class="shadow-md rounded-lg attorney max-w-80 mx-auto">
             <img src="./src/imgs/attorneys/attorney.png" alt="" class="px-2 pt-3 w-full attorney-img">
             <div class="attorney-info p-5 rounded bg-primary">
 
               <div class="flex justify-between items-start">
-              <div class="attorney-info">
-            <h3 class="attorney-name text-xl font-medium font-header text-secondary">
-              John Doe
-            </h3>
-            <p class="attorney-position text-slate-300 font-header">Position</p>
-          </div>
-          <div class="attorney-socials md:block inline-flex">
-            <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-            </a>
-            <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-            </a>
+                <div class="attorney-info">
+                  <h3 class="attorney-name text-xl font-medium font-header text-secondary">
+                    John Doe
+                  </h3>
+                  <p class="attorney-position text-slate-300 font-header">Position</p>
+                </div>
+                <div class="attorney-socials md:block inline-flex">
+                  <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                  </a>
 
+                </div>
+              </div>
+              <div class="bio-button">
+                <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida
+                  consectetur.
+                  <a href="#more-bio"
+                    class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
+                    <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                  </a>
+                </p>
+
+              </div>
+            </div>
           </div>
-        </div>
-          <div class="bio-button">
-            <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida consectetur.
-              <a href="#more-bio" class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
-                <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-              </a>
-            </p>
-  
-        </div>
-          </div>
-        </div>     
           <!-- Attorney -->
           <div class="shadow-md rounded-lg attorney max-w-80 mx-auto">
             <img src="./src/imgs/attorneys/attorney.png" alt="" class="px-2 pt-3 w-full attorney-img">
             <div class="attorney-info p-5 rounded bg-primary">
 
               <div class="flex justify-between items-start">
-              <div class="attorney-info">
-            <h3 class="attorney-name text-xl font-medium font-header text-secondary">
-              John Doe
-            </h3>
-            <p class="attorney-position text-slate-300 font-header">Position</p>
-          </div>
-          <div class="attorney-socials md:block inline-flex">
-            <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-            </a>
-            <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
-              <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-            </a>
+                <div class="attorney-info">
+                  <h3 class="attorney-name text-xl font-medium font-header text-secondary">
+                    John Doe
+                  </h3>
+                  <p class="attorney-position text-slate-300 font-header">Position</p>
+                </div>
+                <div class="attorney-socials md:block inline-flex">
+                  <a href="#" class="inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                  </a>
+                  <a href="#" class="ml-1 inline-flex text-2xl text-gray-200 hover:text-secondary">
+                    <svg class="size-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
+                  </a>
 
-          </div>
-        </div>
-          <div class="bio-button">
-            <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida consectetur.
-              <a href="#more-bio" class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
-                <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-              </a>
-            </p>
-  
-        </div>
-          </div>
-        </div>     
-     
+                </div>
+              </div>
+              <div class="bio-button">
+                <p class="attorney-bio text-slate-200 text-sm flex justify-between items-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis et felis gravida
+                  consectetur.
+                  <a href="#more-bio"
+                    class="ml-2 p-1 hover:border-2 rounded-full transition-all duration-200 ease-in-out">
+                    <svg class="size-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
+                  </a>
+                </p>
 
-      </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
 
       </div>
 
     </section>
-<!-- Our team Section End -->
+    <!-- Our team Section End -->
 
-  <!-- FAQs -->
-  <section class="faq bg-dark">
-    <div class="container mx-auto lg:w-10/12 w-11/12 py-12">
-         <div class="header text-center">
+    <!-- FAQs -->
+    <section class="faq bg-dark">
+      <div class="container mx-auto lg:w-10/12 w-11/12 py-12">
+        <div class="header text-center">
 
           <div class="mt-2">
             <h2 class="md:text-3xl text-2xl font-bold font-header text-slate-200">Frequently Asked Questions</h2>
-            <p class="text-sm text-secondary">Here are some of the most common questions and answers related to Strickland and Partners</p>
+            <p class="text-sm text-secondary">Here are some of the most common questions and answers related to
+              Strickland and Partners</p>
           </div>
         </div>
 
@@ -477,11 +574,11 @@
             <div class="text-slate-100">
               <div class="divide-y-2 divide-secondary">
                 <div class="accordion cursor-pointer transition-all duration-300">
-                  <div class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
-                    What is Strickland and Partners?
-                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    What types of legal services do you offer?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path class="line transition duration-300" d="M12 5l0 14" />
                       <path d="M5 12l14 0" />
@@ -489,31 +586,31 @@
                   </div>
                   <div
                     class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
-                    Strickland and Partners is a non-profit organization dedicated to promoting and supporting girls in technology.
+                    We specialize in blockchain, cryptocurrency, and emerging technology law, including regulatory compliance, smart contracts, crypto asset management, and dispute resolution.
                   </div>
                 </div>
                 <div class="accordion cursor-pointer transition-all duration-300">
-                  <div class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
-                    What is our mission?
-                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    What industries does Strickland & Partners serve?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path class="line transition duration-300" d="M12 5l0 14" />
-                      <path d="M5 12l14 0"/>
+                      <path d="M5 12l14 0" />
                     </svg>
                   </div>
                   <div
                     class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
-                    Our mission is to empower girls through tech education, innovation, and collaboration.
+                    We work with clients in blockchain, cryptocurrency, fintech, gaming, and other emerging tech industries.
                   </div>
                 </div>
                 <div class="accordion cursor-pointer transition-all duration-300">
-                  <div class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
                     What is the current state of Strickland and Partners?
-                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path class="line transition duration-300" d="M12 5l0 14" />
                       <path d="M5 12l14 0" />
@@ -528,11 +625,11 @@
                   </div>
                 </div>
                 <div class="accordion cursor-pointer transition-all duration-300">
-                  <div class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
                     How can Strickland and Partners benefit Me?
-                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path class="line transition duration-300" d="M12 5l0 14" />
                       <path d="M5 12l14 0" />
@@ -540,16 +637,17 @@
                   </div>
                   <div
                     class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
-                    Strickland and Partners can bring numerous benefits to girls, including financial inclusion, improved education,
+                    Strickland and Partners can bring numerous benefits to girls, including financial inclusion,
+                    improved education,
                     and innovation.
                   </div>
                 </div>
                 <div class="accordion cursor-pointer transition-all duration-300">
-                  <div class="p-2 md:text-xl flex justify-between items-center text-slate-100 transition-all duration-300 ease-in-out font-header accordion-header">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 transition-all duration-300 ease-in-out font-header accordion-header">
                     What educational resources do Strickland and Partners offer?
-                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path class="line transition duration-300" d="M12 5l0 14" />
                       <path d="M5 12l14 0" />
@@ -561,11 +659,11 @@
                   </div>
                 </div>
                 <div class="accordion cursor-pointer transition-all duration-300">
-                  <div class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
-                    How can I partner with Strickland and Partners?
-                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    Do you handle legal issues related to NFTs?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path class="line transition duration-300" d="M12 5l0 14" />
                       <path d="M5 12l14 0" />
@@ -573,42 +671,141 @@
                   </div>
                   <div
                     class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
-                    Contact us to discuss potential partnership opportunities.
-                    <div class="mt-2">
-                      <a href=""
-                        class="px-2 py-1 border border-secondary hover:bg-secondary hover:text-slate-100 rounded-md text-secondary transition-all duration-200 ease-in-out">Contact
-                        us</a>
-                    </div>
+                    Yes, we provide legal guidance on NFT creation, intellectual property, licensing agreements, and compliance.
+
                   </div>
                 </div>
                 <div class="accordion cursor-pointer transition-all duration-300">
-                  <div class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
-                    Who are your partners?
-                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    What’s your approach to regulatory compliance?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path class="line transition duration-300" d="M12 5l0 14" />
                       <path d="M5 12l14 0" />
                     </svg>
                   </div>
-                  <div class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
-                    We partner with organizations, companies, and governments to promote and support girls in tech.
+                  <div
+                    class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
+                    We ensure our clients meet local and international laws, including SEC, AML, and KYC requirements.
+
+                  </div>
+                </div>
+                <div class="accordion cursor-pointer transition-all duration-300">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    Can you draft or audit smart contracts?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path class="line transition duration-300" d="M12 5l0 14" />
+                      <path d="M5 12l14 0" />
+                    </svg>
+                  </div>
+                  <div
+                    class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
+                    Yes, our attorneys specialize in creating and auditing smart contracts to ensure they are legally sound and enforceable.
+
+                  </div>
+                </div>
+                <div class="accordion cursor-pointer transition-all duration-300">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    Do you assist with international blockchain projects?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path class="line transition duration-300" d="M12 5l0 14" />
+                      <path d="M5 12l14 0" />
+                    </svg>
+                  </div>
+                  <div
+                    class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
+                    Absolutely. We help navigate the complexities of cross-border regulations and international crypto laws.
+
+                  </div>
+                </div>
+                <div class="accordion cursor-pointer transition-all duration-300">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    Can you assist with dispute resolution in blockchain transactions?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path class="line transition duration-300" d="M12 5l0 14" />
+                      <path d="M5 12l14 0" />
+                    </svg>
+                  </div>
+                  <div
+                    class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
+                    Yes, we handle disputes related to smart contracts, fraudulent transactions, and intellectual property in blockchain.
+
+                  </div>
+                </div>
+                <div class="accordion cursor-pointer transition-all duration-300">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    How do you support blockchain startups?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path class="line transition duration-300" d="M12 5l0 14" />
+                      <path d="M5 12l14 0" />
+                    </svg>
+                  </div>
+                  <div
+                    class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
+                    We offer services like corporate structuring, token governance, and legal strategies tailored to blockchain-based businesses.
+
+                  </div>
+                </div>
+                <div class="accordion cursor-pointer transition-all duration-300">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    What’s your experience with token offerings?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path class="line transition duration-300" d="M12 5l0 14" />
+                      <path d="M5 12l14 0" />
+                    </svg>
+                  </div>
+                  <div
+                    class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
+                    We guide clients through ICOs, STOs, and DAOs, ensuring compliance with securities laws and proper structuring.
+
+                  </div>
+                </div>
+                <div class="accordion cursor-pointer transition-all duration-300">
+                  <div
+                    class="p-2 md:text-xl flex justify-between items-center text-slate-100 font-header accordion-header">
+                    How can I engage your legal services?
+                    <svg class="flex-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path class="line transition duration-300" d="M12 5l0 14" />
+                      <path d="M5 12l14 0" />
+                    </svg>
+                  </div>
+                  <div
+                    class="p-2 mb-2 hidden toggle-accordion text-sm text-slate-100 transition-all ease-in-out duration-300 accordion-content">
+                    Reach out to us via email or phone to schedule a consultation. We’ll discuss your needs and create a tailored strategy.
                     <div class="mt-2">
-                      <a href=""
-                        class="px-2 py-1 border border-secondary hover:bg-secondary hover:text-slate-100 rounded-md text-secondary  transition-all duration-200 ease-in-out">Join
-                        us</a>
+
+                      <a href="mailto:info@stricklandandpartners.org" target="_blank" class="text-sm text-slate-300 border-2 border-slate-300 my-1 py-1 px-3 w-full rounded-full font-header hover:bg-slate-300 hover:text-primary transition-all ease-in-out duration-300">Email Us</a>
                     </div>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
-    </div>
-  </section>
-  <!-- FAQ End -->
+      </div>
+      </div>
+    </section>
+    <!-- FAQ End -->
 
     <!--Book Schedule -->
     <section class="book-schedule py-12 bg-primary">
@@ -674,154 +871,186 @@
 
                 <label for="time" class="text-slate-200 text-lg font-meidum font-header block ml-3 mb-1">Select
                   Time</label>
-                    <div class="flex w-full">
-                        <input type="time" id="time" class="w-1/2 rounded-none rounded-s-full leading-none block ps-5 p-2.5 text-primary" min="09:00" max="18:00" value="00:00" required>
-                        <select id="timezones" name="timezone" class="rounded-e-full block p-2.5 text-primary w-1/2" required>
-                          
-                            <option class=" hover:bg-secondary hover:text-slate-100 text-primary" value="Europe/London">30 Minutes</option>
-                            <option class="hover:bg-secondary hover:text-slate-100 text-primary" value="Europe/Paris">1 Hour</option>
-                            <option class="hover:bg-secondary hover:text-slate-100 text-primary" value="Asia/Tokyo">2 Hours</option>
-                            <option class="hover:bg-secondary hover:text-slate-100 text-primary" value="Canada/Mountain">Dynamic</option>
-                            <option class="hover:bg-secondary hover:text-slate-100 text-primary" value="Canada/Mountain">Duration</option>
+                <div class="flex w-full">
+                  <input type="time" id="time"
+                    class="w-1/2 rounded-none rounded-s-full leading-none block ps-5 p-2.5 text-primary" min="09:00"
+                    max="18:00" value="00:00" required>
+                  <select id="timezones" name="timezone" class="rounded-e-full block p-2.5 text-primary w-1/2" required>
 
-                         </select>
-                    </div>
-              
-              </div>
-              </div>
-              <div class="form-group w-full mb-3">
-                <label for="message" class="text-slate-200 text-lg font-meidum font-header">Message</label>
-                <textarea id="message" class="rounded-lg p-2.5 text-primary w-full" name="message" placeholder="Add Notes..."></textarea>
+                    <option class=" hover:bg-secondary hover:text-slate-100 text-primary" value="Europe/London">30
+                      Minutes</option>
+                    <option class="hover:bg-secondary hover:text-slate-100 text-primary" value="Europe/Paris">1 Hour
+                    </option>
+                    <option class="hover:bg-secondary hover:text-slate-100 text-primary" value="Asia/Tokyo">2 Hours
+                    </option>
+                    <option class="hover:bg-secondary hover:text-slate-100 text-primary" value="Canada/Mountain">Dynamic
+                    </option>
+                    <option class="hover:bg-secondary hover:text-slate-100 text-primary" value="Canada/Mountain">
+                      Duration</option>
+
+                  </select>
                 </div>
 
-                <div class="">
-                  <button type="submit" class="text-slate-100 hover:text-slate-200 hover:bg- bg-secondary rounded-full border-2 border-primary px-6 py-2 cursor-pointer w-full md:w-1/2 font-header">
-                    Schedule Consultation
-                  </button>
-                </div>
+              </div>
+            </div>
+            <div class="form-group w-full mb-3">
+              <label for="message" class="text-slate-200 text-lg font-meidum font-header">Message</label>
+              <textarea id="message" class="rounded-lg p-2.5 text-primary w-full" name="message"
+                placeholder="Add Notes..."></textarea>
+            </div>
+
+            <div class="">
+              <button type="submit"
+                class="text-slate-100 hover:text-slate-200 hover:bg- bg-secondary rounded-full border-2 border-primary px-6 py-2 cursor-pointer w-full md:w-1/2 font-header">
+                Schedule Consultation
+              </button>
+            </div>
           </form>
 
-      <div class="map block">
-        <gmpx-api-loader key="AIzaSyDRbOlzHu2pZstkXBwKtU4WO1n0YX2AAIQ" solution-channel="GMP_GE_mapsandplacesautocomplete_v1">
-        </gmpx-api-loader>
-        <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID">
-          <div slot="control-block-start-inline-start" class="place-picker-container">
-            <gmpx-place-picker placeholder="Enter an address"></gmpx-place-picker>
+          <div class="map block">
+            <gmpx-api-loader key="AIzaSyDRbOlzHu2pZstkXBwKtU4WO1n0YX2AAIQ"
+              solution-channel="GMP_GE_mapsandplacesautocomplete_v1">
+            </gmpx-api-loader>
+            <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID">
+              <div slot="control-block-start-inline-start" class="place-picker-container">
+                <gmpx-place-picker placeholder="Enter an address"></gmpx-place-picker>
+              </div>
+              <gmp-advanced-marker></gmp-advanced-marker>
+            </gmp-map>
           </div>
-          <gmp-advanced-marker></gmp-advanced-marker>
-        </gmp-map>
+
+        </div>
       </div>
-   
-        </div>
-        </div>
-     
+
     </section>
     <!-- Bood a Schedule End -->
 
- <!-- Newsletter -->
- <section class="newsletter bg-other text-primary">
-  <div class="container mx-auto px-4 py-16 md:w-9/12 w-full">
-    <div class="flex flex-col lg:flex-row items-center justify-between">
-      <div class="header text-center lg:text-start mb-4">
-        <h2 class="text-3xl font-header font-bold">Stay Informed</h2>
-        <p class="text-sm lg:w-8/12 w-full">
-          Stay updated on the latest news and updates from Strickland and Partners 
-        </p>
-      </div>
-      <div class="flex items-center justify-between mt-6 lg:mt-0">
-        <form class="flex flex-row items-center justify-between w-full" action="" method="post">
-          <input type="email" name="email" placeholder="Enter your email address" class="form-control border-2 text-other border-secondary outline-none border-r-0 focus:border-secondary px-4 py-2 md:w-80 w-full rounded-s-full transition duration-300 ease-in-out">
-          <button type="submit" class="px-4 py-2 text-xl bg-secondary hover:bg-secondary text-gray-100 rounded-e-full -ml-2 transition duration-300 ease-in-out font-header">Subscribe</button>
-        </form>
-      </div>
-    </div>
-</div>
-</section>
-<!-- End of Newsletter -->
-  </main>
-
-    <!-- Footer -->
-     <footer class="bg-secondary primary py-10">
-
-
-        <div class="container mx-auto w-11/12 lg:w-10/12 p-4 py-6 lg:py-8">
-            <div class="md:flex md:justify-between space-x-3">
-              <div class="mb-6 md:mb-0 w-full">
-                  <a href="https://flowbite.com/" class="flex items-center">
-                      <img src="./src/imgs/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                      <span class="self-center text-2xl font-semibold whitespace-nowrap text-primary font-header">Strickland and Partners</span>
-                  </a>
-                  <p class="mt-2 mb-4 md:w-10/12 text-slate-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eum praesentium itaque deserunt nam error et quo illo quidem, temporibus earum adipisci!</p>
-              </div>
-              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 w-full ">
-                  <div>
-                      <h2 class="mb-2 font-semibold text-primary uppercase">Resources</h2>
-                      <ul class="text-slate-200 w-full">
-                          <li class="mb-2">
-                              <a href="" class="hover:underline">Latest News</a>
-                          </li>
-                          <li class="mb-2">
-                              <a href="#" class="hover:underline">Insights</a>
-                          </li>
-                          <li class="mb-2">
-                              <a href="#" class="hover:underline">Sitemap</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h2 class="mb-2 font-semibold text-primary uppercase">Quick Links</h2>
-                      <ul class="text-slate-200">
-                          <li class="mb-2">
-                              <a href="./practice.html" class="hover:underline ">Practice Areas</a>
-                          </li>
-                          <li class="mb-2">
-                              <a href="./about.html" class="hover:underline">About Us</a>
-                          </li>
-                          <li>
-                              <a href="./contact.html" class="hover:underline">Contact Us</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div>
-                      <h2 class="mb-2 font-semibold text-primary uppercase">Legal</h2>
-                      <ul class="text-slate-200">
-                          <li class="mb-2">
-                              <a href="#" class="hover:underline">Privacy Policy</a>
-                          </li>
-                          <li>
-                              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+    <!-- Newsletter -->
+    <section class="newsletter bg-other text-primary">
+      <div class="container mx-auto px-4 py-16 md:w-9/12 w-full">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <div class="header text-center lg:text-start mb-4">
+            <h2 class="text-3xl font-header font-bold">Stay Informed</h2>
+            <p class="text-sm lg:w-8/12 w-full">
+              Stay updated on the latest news and updates from Strickland and Partners
+            </p>
           </div>
-          <hr class="my-6 border-primary border-1 sm:mx-auto lg:my-8" />
-          <div class="sm:flex sm:items-center sm:justify-between font-header">
-              <span class="text-sm sm:text-center  text-primary">&#169; <span class="year"></span> &#x2022;<a href="" class="hover:underline"> Strickland and Partners&#174;</a> &#x2022; All Rights Reserved.
-              </span>
-              <div class="flex mt-4 sm:justify-center sm:mt-0">
-                  <a href="#" class="hover text-primary">
-                    <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                      <span class="sr-only">LinkedIn</span>
-                  </a>
-                 
-                  <a href="#" class="hover text-primary ms-5">
-                    <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-                      <span class="sr-only">X (Twitter)</span>
-                  </a>
-                  <a href="#" class="hover text-primary ms-5">
-                    <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                      <span class="sr-only">Instagram</span>
-                  </a>
-                  <a href="#" class="hover text-primary ms-5">
-                    <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
-                      <span class="sr-only">Facebook</span>
-                  </a>
-              </div>
+          <div class="flex items-center justify-between mt-6 lg:mt-0">
+            <form class="flex flex-row items-center justify-between w-full" action="" method="post">
+              <input type="email" name="email" placeholder="Enter your email address"
+                class="form-control border-2 text-other border-secondary outline-none border-r-0 focus:border-secondary px-4 py-2 md:w-80 w-full rounded-s-full transition duration-300 ease-in-out">
+              <button type="submit"
+                class="px-4 py-2 text-xl bg-secondary hover:bg-secondary text-gray-100 rounded-e-full -ml-2 transition duration-300 ease-in-out font-header">Subscribe</button>
+            </form>
           </div>
         </div>
-    
-     </footer>
+      </div>
+    </section>
+    <!-- End of Newsletter -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary primary py-10">
+
+
+    <div class="container mx-auto w-11/12 lg:w-10/12 p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between space-x-3">
+        <div class="mb-6 md:mb-0 w-full">
+          <a href="https://flowbite.com/" class="flex items-center">
+            <img src="./src/imgs/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-primary font-header">Strickland and
+              Partners</span>
+          </a>
+          <p class="mt-2 mb-4 md:w-10/12 text-slate-200 text-sm">Blockchain and cryptocurrency law firm offering
+            services like regulatory compliance, smart contract audits, and dispute resolution to support businesses in
+            the digital economy.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 w-full ">
+          <div>
+            <h2 class="mb-2 font-semibold text-primary uppercase">Resources</h2>
+            <ul class="text-slate-200 w-full">
+              <li class="mb-2">
+                <a href="" class="hover:underline">Latest News</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:underline">Insights</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:underline">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-2 font-semibold text-primary uppercase">Quick Links</h2>
+            <ul class="text-slate-200">
+              <li class="mb-2">
+                <a href="./practice.html" class="hover:underline ">Practice Areas</a>
+              </li>
+              <li class="mb-2">
+                <a href="./about.html" class="hover:underline">About Us</a>
+              </li>
+              <li>
+                <a href="./contact.html" class="hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-2 font-semibold text-primary uppercase">Legal</h2>
+            <ul class="text-slate-200">
+              <li class="mb-2">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-primary border-1 sm:mx-auto lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between font-header">
+        <span class="text-sm sm:text-center  text-primary">&#169; <span class="year"></span> &#x2022;<a href=""
+            class="hover:underline"> Strickland and Partners&#174;</a> &#x2022; All Rights Reserved.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <a href="#" class="hover text-primary">
+            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+            </svg>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+
+          <a href="#" class="hover text-primary ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+            </svg>
+            <span class="sr-only">X (Twitter)</span>
+          </a>
+          <a href="#" class="hover text-primary ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="#" class="hover text-primary ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+            </svg>
+            <span class="sr-only">Facebook</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 </body>
 
 </html>

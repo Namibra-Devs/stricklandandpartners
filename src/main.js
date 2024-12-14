@@ -207,6 +207,7 @@ function addAnimation() {
         });
       },
       { threshold: 0.5 } // Trigger when 50% of the section is in view
+      
     );
   
     const section = document.querySelector(".bg-dark");
@@ -263,5 +264,9 @@ document.addEventListener('DOMContentLoaded', init);
 const currentYear = new Date().getFullYear();
 document.querySelector(".year").textContent = currentYear;
 
+
+
+  // Animation on div scroll
+  
 
 });
