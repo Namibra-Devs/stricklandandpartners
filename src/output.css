@@ -1409,6 +1409,11 @@ video {
      object-fit: cover;
 }
 
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -1867,11 +1872,6 @@ video {
 .hover\:bg-secondary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(235 131 23 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-slate-100:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-slate-300:hover{
